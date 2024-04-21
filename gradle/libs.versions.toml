@@ -9,7 +9,7 @@ appcompat = "1.6.1"
 material = "1.11.0"
 activity = "1.8.0"
 constraintlayout = "2.1.4"
-dagger_hilt_version="2.49"
+dagger_hilt_version="2.44"
 retrofit="2.9.0"
 
 [libraries]
@@ -32,4 +32,3 @@ dagger-hilt-compiler = { group = "com.google.dagger", name = "hilt-android-compi
 androidApplication = { id = "com.android.application", version.ref = "agp" }
 jetbrainsKotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 daggerHiltAndroid = { id = "com.google.dagger.hilt.android", version.ref = "dagger_hilt_version" }
-
