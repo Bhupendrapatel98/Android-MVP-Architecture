@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsKotlinAndroid)
+    alias(libs.plugins.daggerHiltAndroid)
 }
 
 android {
@@ -45,4 +46,10 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
+    androidTestImplementation(libs.retrofit)
+    androidTestImplementation(libs.retrofit.converter.gson)
+
+    androidTestImplementation(libs.dagger.hilt.android)
+    androidTestImplementation(libs.dagger.hilt.compiler)
 }
