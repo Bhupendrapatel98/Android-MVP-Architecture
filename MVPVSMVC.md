@@ -41,6 +41,17 @@ MVC is an architectural pattern that divides an application into three interconn
 - **Separation of Concerns:** Each component has distinct responsibilities, enhancing code organization and readability.
 - **Widely Adopted:** MVC is a well-established pattern used in many frameworks and platforms.
 
+## Differences Between MVC and MVP
+
+| Aspect               | MVC                                        | MVP                                      |
+|----------------------|--------------------------------------------|------------------------------------------|
+| What Does It Do?     | Controller manages user actions and data.  | Presenter guides user actions and updates data. |
+| How They Talk?       | View directly talks to controller.         | View talks to presenter, which talks to controller. |
+| How Easy to Test?    | Testing can be tricky due to close connections. | Testing is easier because presenter is simpler to test alone. |
+| Who Talks to Who?    | Controller talks to both view and model.   | Presenter mostly talks to view, then updates model. |
+| How Flexible?        | Changes in one part often affect others.   | Changes in one part don't always affect the others directly. |
+| Popular Usage?       | Lots of apps use MVC, but it's not strict. | Many Android apps use MVP for cleaner code. |
+
 ## Choosing Between MVC and MVP
 
 - **Use MVC when:** You need a simple and widely adopted architecture with well-defined roles for each component.
